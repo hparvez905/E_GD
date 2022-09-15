@@ -7,11 +7,11 @@ export default function HomeScreen({navigation}){
         <View style={styles.container}>
             <Text style={{fontWeight:'bold',fontSize:20,margin:10}}>DO You have Account???</Text>
             <Button title='yes I have'
-            onPress={()=>navigation.navigate('Second',{Answer:'true'})}> // sign in or sign up //
+            onPress={()=>navigation.navigate('SignIn',{Answer:'true'})}> // sign in or sign up //
 
             </Button>
             <Button title='No, I do not'
-            onPress={()=>navigation.navigate('Second',{Answer:'false'})}>
+            onPress={()=>navigation.navigate('DashBoard',{Answer:'false'})}>
 
             </Button>
             <StatusBar style="auto"></StatusBar>

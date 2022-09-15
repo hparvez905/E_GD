@@ -1,13 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet,Text,View,Button } from "react-native";
 
-export default function Third({navigation}){
+export default function DashBoard({navigation}){
     return(
         <View style={styles.container}>
-            <Text> hi
-            </Text>
-            <Button title="pop to root" onPress={()=>navigation.popToTop()}></Button>   // pop kore Homepage jabe;
-            <Button title="pop" onPress={()=>navigation.pop()}></Button>             //pop kore back e jabe;
+            <Text> This is Dashboard Screen</Text>
+            
+            <Button title="pop to root" onPress={()=>navigation.popToTop()}></Button>  
+            <Button title="pop" onPress={()=>navigation.pop()}></Button>             
             <StatusBar style="auto"></StatusBar>
         </View>
     );

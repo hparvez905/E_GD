@@ -1,10 +1,13 @@
 import React from 'react'
 import {StyleSheet,Text,View,Button,Alert,TouchableOpacity,Image,TextInput} from 'react-native'
 
-const SignIn = ({navigation}) => {
+const SignIn = ({navigation ,route}) => {
+    let Answer=route.params.Answer;  // parameter used for sign in or sign up
+    let UserAnswer=Answer==='true'? 'E_GD ' : 'SIGN UP PAGE';
     return (
         <View style={styles.container}>
-            <Text style={{color:"#ff4d00",fontSize:25,fontWeight:"bold"}} >E_GD তে স্বাগতম!</Text>
+            
+            <Text style={{color:"#ff4d00",fontSize:25,fontWeight:"bold"}} > {UserAnswer}তে স্বাগতম!</Text>
             <Text style={{color:"#ff4d00",fontSize:20,fontWeight:"bold", marginBottom:20}} >জিডি করতে  এখানে সাইন ইন করুন </Text>
             <View style={styles.inputContainer}>
                 <Text style={styles.headField}>ইমেইল</Text>

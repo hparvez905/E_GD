@@ -1,6 +1,6 @@
 import HomeScreen from "./Screen/HomeScreen";
-import Second from "./Screen/Second";
-import Third from './Screen/Third'
+import SignIn from "./components/SignIn";
+import DashBoard from "./components/Dashboard";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -16,13 +16,13 @@ export default function App(){
             options={{title:'Welcome'}}
             />
              <Stack.Screen 
-            name="Second" 
-            component={Second}
+            name="SignIn" 
+            component={SignIn}
             
             />
              <Stack.Screen 
-            name="Third" 
-            component={Third}
+            name="DashBoard" 
+            component={DashBoard}
             options={{headerShown:false}}
             
             />
